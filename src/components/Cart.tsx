@@ -10,13 +10,13 @@ export default function Cart () {
   } = useStore((state) => state);
 
   return(
-    <main className="absolute z-10 max-sm:-translate-x-1/2 top-25 right-25 max-sm:left-1/2 sm:w-[25dvw] w-[95dvw] p-5 shadow-2xl bg-White rounded-2xl">
+    <main className="absolute z-10 max-sm:-translate-x-1/2 top-25 right-25 max-lg:right-5 max-sm:left-1/2 max-sm:w-[95dvw] p-5 shadow-2xl bg-White rounded-2xl">
       <h1 className="font-bold pb-4">Cart</h1>
       <hr className="opacity-20"/>
       {
         !CartProducts?.AccountTotal ? 
         (
-          <h1 className="font-bold text-DarkGrayishBlue text-center my-12">Your cart is empty</h1>
+          <h1 className="font-bold text-DarkGrayishBlue text-center my-12 px-18">Your cart is empty</h1>
         )
         :
         (
